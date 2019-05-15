@@ -2,10 +2,10 @@ import { EffectsCommandMap } from 'dva';
 import { match } from 'react-router-dom';
 import { AnyAction } from 'redux';
 import { RouterTypes } from 'umi';
-import { AppModelState } from './app';
+import { IndexModelState } from './model';
 
 export {
-  AppModelState
+  IndexModelState
 };
 
 export interface MenuDataItem {
@@ -62,7 +62,7 @@ export interface Loading {
 }
 
 export interface ConnectState {
-  app?: AppModelState;
+  index?: IndexModelState;
 }
 
 /**

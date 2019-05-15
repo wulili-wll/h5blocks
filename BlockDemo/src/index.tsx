@@ -1,7 +1,7 @@
 import { connect } from 'dva';
 import React, { Component } from 'react';
 
-import { IndexModelState, ConnectProps } from '@/models/connect';
+import { IndexModelState, ConnectProps } from './connect';
 
 import styles from './index.less';
 

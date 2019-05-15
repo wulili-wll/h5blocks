@@ -1,3 +1,3 @@
 export default {
-  appType: 'pc',
+  appType: 'h5',
 };

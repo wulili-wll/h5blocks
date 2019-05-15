@@ -1,6 +1,5 @@
-import { query } from '@/services/api';
-
-import { Effect } from '@/models/connect';
+import { query } from './service';
+import { Effect } from './connect';
 import { Reducer } from 'redux';
 import { Subscription } from 'dva';
 export interface IndexModelState {
