@@ -2,10 +2,10 @@ import { EffectsCommandMap } from 'dva';
 import { match } from 'react-router-dom';
 import { AnyAction } from 'redux';
 import { RouterTypes } from 'umi';
-import { IndexModelState } from './model';
+import { BLOCK_NAME_CAMEL_CASEModelState } from './model';
 
 export {
-  IndexModelState
+  BLOCK_NAME_CAMEL_CASEModelState
 };
 
 export interface MenuDataItem {
@@ -62,7 +62,7 @@ export interface Loading {
 }
 
 export interface ConnectState {
-  index?: IndexModelState;
+  BLOCK_NAME_CAMEL_CASE?: BLOCK_NAME_CAMEL_CASEModelState;
 }
 
 /**

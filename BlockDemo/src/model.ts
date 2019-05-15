@@ -2,25 +2,25 @@ import { query } from './service';
 import { Effect } from './connect';
 import { Reducer } from 'redux';
 import { Subscription } from 'dva';
-export interface IndexModelState {
+export interface BLOCK_NAME_CAMEL_CASEModelState {
   name: string;
 }
 
-export interface IndexModelType {
-  namespace: 'index';
-  state: IndexModelState;
+export interface BLOCK_NAME_CAMEL_CASEModelType {
+  namespace: 'BLOCK_NAME_CAMEL_CASE';
+  state: BLOCK_NAME_CAMEL_CASEModelState;
   effects: {
     query: Effect;
   };
   reducers: {
-    save:  Reducer<IndexModelState>;
+    save:  Reducer<BLOCK_NAME_CAMEL_CASEModelState>;
   };
   subscriptions: { setup: Subscription };
 }
 
 
-const IndexModel: IndexModelType = {
-  namespace: 'index',
+const BLOCK_NAME_CAMEL_CASEModel: BLOCK_NAME_CAMEL_CASEModelType = {
+  namespace: 'BLOCK_NAME_CAMEL_CASE',
 
   state: {
     name: ''
@@ -59,4 +59,4 @@ const IndexModel: IndexModelType = {
   },
 };
 
-export default IndexModel;
+export default BLOCK_NAME_CAMEL_CASEModel;
